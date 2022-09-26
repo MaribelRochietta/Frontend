@@ -1,0 +1,40 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+
+<div class="container-fluid">
+    <h2 id="titulo">Conocimientos</h2>
+    <div id="element" *ngIf="hasRoute('/modoEdicion')">
+        <button  (click)="Nuevo()" class="btn btn-success" style="float:right;">AGREGAR</button>
+    </div>
+            <div class="container" style="padding-left:300px">
+                <div *ngFor="let conocimientos of conocimientoss">
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div class="progress" style="margin-top:15px; font-family: 
+                        'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:15px;">
+                            <div class="progress-bar progress-bar-striped bg-success" 
+                            style="color:black; width:{{conocimientos.valor}}%">
+                            
+                            {{conocimientos.nombre}}  {{conocimientos.valor}}%
+                            </div>
+                        </div>
+                        <p></p>
+                    <div id="element" *ngIf="hasRoute('/modoEdicion')">
+                        <button (click)="Editar(conocimientos)" type="submit" class="btn btn-warning btn-xs" style="float:right; font-size:10px">EDITAR</button>
+                        <button (click)="Delete(conocimientos)" class="btn btn-danger" style="float:right; font-size:10px">ELIMINAR</button>
+                    </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="footer__p" style="color:rgb(255, 255, 255)">
+            &copy; Copyright 2022 &copy; <a href="#">Maribel Rochietta</a>
+        </p>
+        
+    </footer>
+</div>
+

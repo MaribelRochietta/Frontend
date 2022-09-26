@@ -1,0 +1,28 @@
+.link 
+{
+	padding-left: 60%; /* Establecemos la barra en la izquierda */
+	margin-top: 0px; /* Bajamos la barra 200px de arriba a abajo */
+    margin-bottom:10px;
+    float:right
+}
+
+
+.link ul  a {
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease; 
+}
+
+
+.imagen-logo
+{
+    position:absolute;
+    margin-top:-20px;
+    margin-left:30px;
+}
+
+
+

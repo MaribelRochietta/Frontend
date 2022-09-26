@@ -1,0 +1,69 @@
+
+
+#linea
+{
+    padding-top:50px;
+    margin:30px auto 0 auto;
+    position:relative;
+    max-width:1000px;
+
+}
+
+#linea:before
+{
+    position:absolute;
+    content:'';
+    top:100px;
+    bottom:0;
+    left:150px;
+    right:auto;
+    width:3px;
+    background:#3498db;
+    z-index:0;
+    background:linear-gradient(to bottom, #3498db, rgba(52,152,219,0));
+
+}
+
+#titulo{
+text-align: center;
+padding-top: 150px;
+font-size: 50px;
+}
+
+#icono
+{
+    position:absolute;
+    padding-top:10px;
+    padding-left:120px;
+}
+
+h3
+{
+    padding-left:10px;
+    font-size:30px;
+    padding-top:10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #8597a3;
+}
+
+h4
+{
+    padding-left:30px;
+    font-size:15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #8597a3;
+}
+
+p
+{
+    padding-left:30px;
+    font-size:15px;
+    font-weight:200
+}
+
+#fecha
+{
+    padding-left:200px;
+    font-size:15px;
+}
+

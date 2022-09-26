@@ -1,0 +1,37 @@
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<div class="container-fluid">
+    <h2 id="titulo">Estudios</h2>
+
+    <div id="element" *ngIf="hasRoute('/modoEdicion')">
+        <button  (click)="Nuevo()" class="btn btn-success" style="float:right;">AGREGAR</button>
+    </div>
+
+    <div id="linea">
+        <div *ngFor="let estudios of estudioss">
+            <div id="icono">
+                 <img class="imagen-yo" src="{{estudios.icono}}" widht = "70px" height="70px"/>
+            </div>
+                <div id="fecha">
+                    <h5>{{estudios.fecha}}</h5>
+                <div id="element" *ngIf="hasRoute('/modoEdicion')">
+                    <button (click)="Editar(estudios)" class="btn btn-warning" style="float:right;">EDITAR</button>
+                    <button (click)="Delete(estudios)" class="btn btn-danger" style="float:right;">ELIMINAR</button>
+                </div>
+                </div>          
+                    <div class="p-4 mb-2 bg-white text-dark" style="margin-left:200px">
+                        <h3>{{estudios.titulo}}</h3>
+                        <h4>{{estudios.subtitulo}}</h4>
+                        <p>{{estudios.parrafo}}</p>
+                    </div>
+                    
+        </div>
+    </div>
+ 
+</div>
+
+
+   
+     

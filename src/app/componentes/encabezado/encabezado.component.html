@@ -1,0 +1,43 @@
+<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/v4-shims.js"></script> 
+<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/fontawesome.js"> </script>       
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<header>
+     
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+            <img class="imagen-logo" src="../../../assets/APLogo.png" widht = "100px" height="100px" style="margin-top:10px"/>
+
+            <div class="link">
+                <ul>
+                    <a href="https://twitter.com/Maribel79366698?t=21Aw1xM--k41TCS0HUwoWA&s=08" target="_blank">
+                            <img class="imagen-logo" src="../assets/twitter.png" widht = "50px" height="50px" style="margin-top:-7px"/>
+                        </a>
+                        <a href="https://instagram.com/maribel_rochietta?igshid=YmMyMTA2M2Y=" target="_blank">
+                            <img class="imagen-logo" src="../assets/insta.png" widht = "40px" height="40px" style="margin-top:-1px"/>
+                        </a>
+                        <a href="https://wa.me/3408572052" target="_blank">
+                            <img class="imagen-logo" src="../assets/what.png" widht = "40px" height="40px" style="margin-top:-3px"/>
+                        </a>
+                        <a href="https://github.com/MaribelRochietta" target="_blank">
+                            <img class="imagen-logo" src="../assets/git.png" widht = "60px" height="60px" style="margin-top:-10px"/>
+                        </a>
+                </ul>
+            </div>   
+
+            <div id="element" *ngIf="hasRoute('/')">
+                <button type="nav-link active" class="btn btn-primary btn-lg" 
+                style="float:right; font-size:15px; margin-left:100px" 
+                routerLink="/login" routerLinkActive="active">Iniciar sesión</button>
+             </div>   
+                 
+                 <div id="element" *ngIf="hasRoute('/modoEdicion')">
+                    <button type="nav-link active" class="btn btn-primary btn-lg" 
+                    style="font-size:15px; float:right; margin-left:100px" 
+                    routerLink="/" routerLinkActive="active">Cerrar sesión</button>
+                 </div>   
+
+    </nav>
+</header>
